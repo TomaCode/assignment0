@@ -1,1 +1,0 @@
-cat $1  | fmt --width=1 | tr -d '[:punct:] | tr '[:upper:]' '[:lower:]' | uniq | sort | comm - ./dictionary -2 -3
